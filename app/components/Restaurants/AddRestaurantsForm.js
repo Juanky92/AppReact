@@ -117,7 +117,7 @@ function ImageRestaurant(props) {
     <View style={styles.viewPhoto}>
       {imageRestaurant ? (
         <Image
-          source={{ uri: imageRestaurant }}
+          source={{ uri: imageRestaurant ? imageRestaurant : "" }}
           style={{ width: WidthScreen, height: 200 }}
         />
       ) : (

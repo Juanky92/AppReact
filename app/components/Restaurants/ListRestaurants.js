@@ -55,7 +55,7 @@ function Restaurant(props) {
         <View style={styles.viewRestaurantImage}>
           <Image
             resizeMode="cover"
-            source={{ uri: imageRestaurant }}
+            source={{ uri: imageRestaurant ? imageRestaurant : "" }}
             style={styles.imageRestaurant}
             PlaceholderContent={<ActivityIndicator color="fff" />}
           />
